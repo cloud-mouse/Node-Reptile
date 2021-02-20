@@ -1,0 +1,14 @@
+@url=http://localhost:3002
+
+POST {{url}}/crawler/crawlerbook
+Content-Type: application/json
+
+{
+  "url": "http://book.zongheng.com/store/c0/c0/b0/u2/p1/v0/s1/t0/u0/i1/ALL",
+}
+
+###
+GET {{url}}/book/getBookList
+
+###
+GET {{url}}/crawler/getChapterList
